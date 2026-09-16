@@ -51,6 +51,10 @@ body {
 <img id="ouroboros" class="azlogo" src="/assets/image/ouroboros/ouro-snek.png" alt="OUROBOROS" width="300"/>
 </div>
 
+<video muted autoplay loop style="position: fixed; right:0; z-index: -69; bottom: 0; min-width: 100%; min-height: 100%">
+    <source src="/assets/video/ourobg.webm" type="video/webm">
+</video>
+
 <br>
 <p align="center"><font size="5"><a href="/music/10/page.html"><span class="message"> OUROBOROS <br> OUT NOW </span></a></font></p>
 <br>
