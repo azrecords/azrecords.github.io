@@ -7,6 +7,7 @@ author: 1oolm
 comments: true
 description: A new promotional video for the upcoming OUROBOROS album has been released on YouTube.
 important: true
+unlisted: true
 ---
 Happy 2 years of alpha.zero music!<br>
 A new promotional video for the upcoming <a href="/music/10/page.html">OUROBOROS album</a> has been released on <a href="https://youtu.be/wq-33n4Icsw"><font color="#DC0000">YouTube</font></a>.<br><br>

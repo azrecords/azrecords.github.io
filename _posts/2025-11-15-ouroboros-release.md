@@ -7,6 +7,7 @@ author: 1oolm
 comments: true
 important: true
 description: The OUROBOROS album is out now.
+unlisted: true
 ---
 The OUROBOROS album is out now. 18 months of development.<br>
 <div style='margin: auto; background-position: center; text-align: center; max-width: 96%;'></div>

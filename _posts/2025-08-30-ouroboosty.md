@@ -6,6 +6,7 @@ categories: [Updates, Music]
 author: 1oolm
 comments: true
 description: OUROBOROS IS COMPLETE. More teasers on Boosty.
+unlisted: true
 ---
 <h3>OUROBOROS IS COMPLETE.</h3> <br>
 The audio is final. We're in the endgame now. Over a year of work is finally coming to a close.<br>

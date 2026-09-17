@@ -18,7 +18,7 @@ body {
   margin: auto;
   width: 0%;
   padding: 150px;
-   animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 .azlogo {
   position: absolute;
@@ -59,10 +59,6 @@ body {
 <p align="center"><font size="5"><a href="/music/10/page.html"><span class="message"> OUROBOROS <br> OUT NOW </span></a></font></p>
 <br>
 <p align="center"><font size="6">
-<span id="about">
-<a href="/about/"><font color ="#FFBEBE">ABOUT</font></a> 
-</span>
-/ 
 <span id="posts">
 <a href="/blog/"><font color ="#FFBEBE">BLOG</font></a>
 </span>
