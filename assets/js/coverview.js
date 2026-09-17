@@ -77,8 +77,8 @@ if (!isMobile()) {
          
 
                 if(dx>cx) /*without that horizontal values are reversed*/
-                    $('#coverview').css('box-shadow', + (-changes.shady) + 'px ' + (-changes.shadx) +'px 5px #3D352A');
-                else $('#coverview').css('box-shadow', + changes.shady + 'px ' + (-changes.shadx) +'px 5px #3D352A');
+                    $('#coverview').css('box-shadow', + (-changes.shady) + 'px ' + (-changes.shadx) +'px 5px #121212');
+                else $('#coverview').css('box-shadow', + changes.shady + 'px ' + (-changes.shadx) +'px 5px #121212');
             }, transitionStepDuration);
 				
             oldMousePositionX = newMousePositionX;
