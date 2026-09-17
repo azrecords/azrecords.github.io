@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-
 <div class="posts">
-    {{ content }}
 <style>
 @keyframes move-it {
   0% {
@@ -34,7 +32,7 @@ post-list-heading {
     <br>
     <ul class="post-list">
         {%- for post in site.posts -%}
-        {%- unless post.unlisted -%}
+        {%- unless post.unlisted or post.review -%}
         <li>
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <span class="post-meta">{{ post.date | date: date_format }}{%- if post.important -%}&nbsp;&bull; <font color="#CCCCCC">Important</font>{%- endif -%}</span>
@@ -52,4 +50,9 @@ post-list-heading {
     </ul>
     {%- endif -%}
 
+</div>
+<p align="center"><font size="6" >--UNDER CONSTRUCTION--</font></p>
+<p align="center"><font size="4" >Stay tuned for a proper music publication: album reviews, interviews, and more.</font></p>
+<div style='margin: auto; background-position: center; text-align: center;'>
+<img src="/assets/image/fear.webp" width="50" style="align-content: center;"/>
 </div>
