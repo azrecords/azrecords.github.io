@@ -66,6 +66,11 @@ body {
 <span id="music">
 <a href="/music/"><font color ="#FFBEBE">MUSIC</font></a>
 </span>
+/
+<span id="reviews">
+<a href="/reviews/"><font color ="#FFBEBE">REVIEWS</font></a>
+</span>
+
 
 
 </font></p>

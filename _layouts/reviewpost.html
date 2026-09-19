@@ -1,0 +1,80 @@
+---
+layout: post
+---
+<style>
+body {
+    -webkit-backdrop-filter: blur(10px) brightness(14%);
+    backdrop-filter: blur(10px) brightness(14%);
+    background-image: url({{ page.cover }});
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+audio {
+    filter: contrast(99%) invert(100%);
+    width: 50%;
+    height: 40px;
+}
+h3 {  
+  background: repeating-linear-gradient(
+  -45deg,
+  #0f0f0f,
+  #0f0f0f 5%,
+  #000000 5%,
+  #000000 10%
+);
+  background-size: 100px 100px;
+  animation: move-it 10s linear infinite;
+}
+</style>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<span id="coverwrap" style="position:relative">
+<!--<span style="position:absolute; top:50%; right:100%; display: inline-block; float: right; vertical-align: middle;"><a href=""><input type="image" , src="/assets/image/arrow-right.png" , width="50" , height="50" style="outline: none; background-color: transparent; display: inline-block; float: right; vertical-align: middle;" /></a></span>-->
+<div id="coverview" style='background: url({{ page.cover }}); height: 320px; width: 320px; border: double; border-color: white; background-size: contain; background-repeat: no-repeat; background-position: center; margin: auto;'></div>
+</span>
+
+
+<div style='margin: auto; background-position: center; text-align: center;'><font size="6">{{ page.releasetitle }}</font></div>
+
+<div style='margin: auto; background-position: center; text-align: center;' id="artistsinfo">
+<font style="color: #b23b82; background-image: -webkit-linear-gradient(90deg, #dddddd 52%, #ffffff 92%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;" size="4">{{ page.artist}}</font>
+</div>
+<br>
+<div style='margin: auto; background-position: center; text-align: center;' id="releaseinfo">
+<img src="/assets/image/length.png" width="30"></img><span style='margin: auto; background-position: left; text-align: left;'><font size="3"> {{ page.length | upcase }}</font></span>
+    //
+<img src="/assets/image/date.png" width="30"></img><span style='margin: auto; background-position: left; text-align: left;'><font size="3"> {{ page.releasedate | upcase }}</font></span>
+</div>
+<br>
+<div style='margin: auto; background-position: center; text-align: center; max-width: 96%;' id="releaselinks">
+{%- if page.spotify -%}
+<a href={{ page.spotify }}><font color="#1ED759" size="2">Spotify</font></a> {%- if page.youtube -%}{%- endif -%}
+{%- endif -%}
+{%- if page.youtube -%}
+{%- if page.spotify -%}&nbsp;//&nbsp;{%- endif -%}<a href={{ page.youtube }}><font color="#DC0000" size="2">YouTube</font></a> {%- if page.itunes -%}{%- endif -%}
+{%- endif -%}
+{%- if page.itunes -%}
+&nbsp;//&nbsp;<a href={{ page.itunes }}><font color="#F94C56" size="2">Apple Music</font></a> {%- if page.tidal -%}{%- endif -%}
+{%- endif -%}
+{%- if page.tidal -%}
+&nbsp;//&nbsp;<a href={{ page.tidal }}><font color="#EEEEEE" size="2">TIDAL</font></a> {%- if page.soundcloud -%}{%- endif -%}
+{%- endif -%}
+{%- if page.soundcloud -%}
+&nbsp;//&nbsp;<a href={{ page.soundcloud }}><font color="#FF7600" size="2">SoundCloud</font></a> {%- if page.bandcamp -%}{%- endif -%}
+{%- endif -%}
+{%- if page.bandcamp -%}
+&nbsp;//&nbsp;<a href={{ page.bandcamp }}><font color="#629AA8" size="2">Bandcamp</font></a>
+{%- endif -%}
+</div>
+<br>
+
+{{ content }}
+
+<br>
+{%- if page.comments != false and site.disqus.shortname -%}
+  {%- include disqus.html -%}
+{%- endif -%}
+<script type="text/javascript" src="/assets/js/coverview.js"></script>
