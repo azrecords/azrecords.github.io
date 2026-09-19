@@ -62,7 +62,7 @@ grid-row-gap: 10px;
         style="position: relative; grid-column: span 2; background-color: black; color: white; padding: 10px; border: double; border-color: white; margin-bottom: 0;"
         >
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            {%- if post.cover -%}<span id="cover"><img src="{{ post.cover }}" style="float:center; margin-right: 5%; background-size:contain; max-block-size:100%; object-fit:contain; border: double; border-color: gray;"></img></span>{%- endif -%}
+            {%- if post.image -%}<span id="cover"><img src="{{ post.image }}" style="float:center; margin-right: 5%; background-size:contain; max-block-size:100%; object-fit:contain; border: double; border-color: gray;"></img></span>{%- endif -%}
             <font size="4">{{ post.artist }}</font>
             <h5><a href="{{ post.url | relative_url }}" class="post-link">{{ post.releasetitle }}</a></h5>            
             <font size-"1" color="#AAAAAA" style="margin-top: auto;">by {{ post.author }} - {{ post.date | date: date_format }}</font>
