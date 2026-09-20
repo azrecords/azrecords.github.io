@@ -17,7 +17,7 @@ layout: default
         {%- if page.categories -%}
         <br> <img src="/assets/image/folder.svg" width="20" />&nbsp;
         {%- for category in page.categories -%}
-        <span><a href="/categories/#{{ category }}"><font color="#999999"><u>{{ category }}</u></font></a>{%- unless forloop.last -%},&nbsp;{%- endunless -%}</span>
+        <span><font color="#999999">{{ category }}</font>{%- unless forloop.last -%},&nbsp;{%- endunless -%}</span>
         {%- endfor -%}
         {%- endif -%}
         {%- if page.unlisted -%}
@@ -30,7 +30,6 @@ layout: default
     </p>
   </header>
   <div id="line-x"><hr /></div>
-    <br>
     <br>
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}

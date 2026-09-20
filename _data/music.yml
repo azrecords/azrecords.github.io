@@ -173,6 +173,7 @@
   youtube: "https://youtu.be/PHIcL7vfmqc"
   soundcloud: "https://soundcloud.com/1oolm/sets/ouroboros"
   bandcamp: "https://1oolm.bandcamp.com/album/ouroboros"
+  spotify: "https://open.spotify.com/album/66bVwaXO6S6ETIo25Kn5ON"
   filemp3: "https://drive.google.com/file/d/1Tik0WSZTF-D9JFXqF5jzaXIsTP3_gZSm/view?usp=sharing"
   length: "12 tracks (35:00)"
   genres: "hardcore"
@@ -194,12 +195,13 @@
   {name: "REWIND", id: 12, length: "4:37", sclink: "rewind"},
   ]
 
-- title: "GRAVEDIGGER [REPRISE] (seraph ver.)"
+- title: "SERAPH"
   artist: "1oolm"
   id: 11
   youtube: "https://youtu.be/jtde5f9Sw0I"
   soundcloud: "https://soundcloud.com/1oolm/seraph"
-  bandcamp: "https://1oolm.bandcamp.com/track/gravedigger-reprise-seraph-ver"
+  bandcamp: "https://1oolm.bandcamp.com/track/seraph"
+  spotify: "https://open.spotify.com/track/647PmTi5MZ2mdaxC1zFsOY"
   filemp3: "/music/11/SERA.mp3"
   filegfx: "/music/11/SERA-GFX.zip"
   length: "4:30"
@@ -214,6 +216,7 @@
   youtube: "https://youtu.be/U4IIqFJkCnI"
   soundcloud: "https://soundcloud.com/1oolm/sets/split"
   bandcamp: "https://1oolm.bandcamp.com/album/split"
+  spotify: "https://open.spotify.com/album/1wysxU76O8iOlnyReTOsbP"
   filemp3: "/music/12/SPLIT-MP3.zip"
   filegfx: "/music/12/SPLIT-GFX.zip"
   length: "4 tracks (11:36)"
@@ -248,6 +251,7 @@
   youtube: "https://youtu.be/tXnbpKbZu_g"
   soundcloud: "https://soundcloud.com/1oolm/quetzalcoatl"
   bandcamp: "https://1oolm.bandcamp.com/track/quetzalcoatl"
+  spotify: "https://open.spotify.com/album/2GhxtystxncQg6q2DAA9Hk"
   filemp3: "/music/14/QUE.mp3"
   filegfx: "/music/14/QUE-GFX.zip"
   length: "3:07"
