@@ -18,6 +18,7 @@ plugins:
   - jekyll-target-blank
   - jekyll-seo-tag
   - jemoji
+  - jekyll-sitemap
 
 collections:
   about:

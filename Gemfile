@@ -7,6 +7,7 @@ group :jekyll_plugins do
   gem "jekyll-target-blank"
   gem "jekyll-seo-tag"
   gem "jemoji"
+  gem "jekyll-sitemap"
 end
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
