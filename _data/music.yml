@@ -287,3 +287,16 @@
   year: 2026
   date: "28/09/2026"
   type: single
+
+- title: "split 2"
+  artist: "1oolm"
+  id: 17
+  youtube: "https://youtu.be/jsJqIw6A368"
+  soundcloud: "https://soundcloud.com/1oolm/sets/split2"
+  bandcamp: "https://1oolm.bandcamp.com/album/split-2"
+  filemp3: "/music/17/SP2.zip"
+  length: "4 tracks (14:30)"
+  genres: "ambient"
+  year: 2026
+  date: "01/10/2026"
+  type: EP
