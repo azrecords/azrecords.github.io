@@ -287,3 +287,11 @@ ul {
     }
   }
 }
+
+
+.crxw-answer {
+        font-family: serif;
+        color: #EEEEEE;
+        @include relative-font-size(1.125);
+        background-color: black;
+    }
