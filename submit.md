@@ -55,7 +55,7 @@ Everything can be discussed and worked out individually.
 <h2>GIMME NOW NOW NOW NOW</h2>
 To submit a release:
 - E-mail <a class="u-email" href="mailto:{{ site.email }}"><u>{{ site.email }}</u></a>
-- Contact @1oolm on Discord   
+- Contact @luminellaaa on Discord   
 
 Submit files through non-ephemeral cloud storage. (MEGA, Google Drive, Mediafire)  
 <font color="#AAAAAA">Ongoing compilation albums you could submit to will be listed here.</font>  
