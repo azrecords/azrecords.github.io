@@ -258,26 +258,6 @@ video {
     height: 10px;
 }
 
-#release-list {
-    float: center;
-    width: 95%;
-    height: 100%;
-    margin-bottom: 20px;
-}
-
-#release {
-    float: center;
-    width: 90%;
-    height: 180px;
-    object-fit: content;
-}
-
-#cover {
-    width: 90%;
-    height: 90%;
-    align-items: center;
-}
-
 @keyframes move-it {
   0% {
     background-position: initial;

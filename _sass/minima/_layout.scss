@@ -121,12 +121,19 @@ textarea {
     }
   }
 }
-
+.release {
+  border: 10px;
+  display:normal;
+}
 .release-list {
-    .release {
-        border: 10px;
-        margin: auto;
-        display:normal;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 3fr));
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+    @include media-query($on-palm) {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 3fr));
     }
 }
 

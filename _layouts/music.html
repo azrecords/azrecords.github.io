@@ -18,6 +18,16 @@ layout: default
     background-position: center; 
     background-size: cover;
 }
+
+img {
+    max-width: 99%;
+    vertical-align: middle;
+}
+
+#release {
+    float: center;    
+    object-fit: content;
+}
 </style>
 <header class="post-header">
     <h1 class="post-title">{{ page.title | escape | upcase }}</h1>
@@ -29,27 +39,18 @@ layout: default
 <br>
 <div class="release-list" id="release-list">
     {% assign music = site.data.music | reverse %}
-    {%- for release in music -%}{% unless release.draft %}
-    {% assign releasetype = release.type %}
-    {% assign releaseartist = release.artist %}
-    {% assign releaseid = release.id %}
-   <div class="release" id="release" style="position: relative; background-color: rgba(0,0,0,0); color: white; padding: 20px; border: double; border-color: white; margin-bottom: 0; background-image: url(/music/{{ release.id }}/cover-blur.jpg);">
-        <span class="rid" style="z-index: 9; color: gray;">
-        {% assign fuck = release.id | divided_by: 10 %}
-        {% if fuck < 1 %}
-            #{{ releaseid | prepend: 0 }}
-        {% else %}
-            #{{ releaseid }}  
-        {%- endif -%}
+    {%- for release in music -%}
+    {% unless release.draft %}
+   <div class="release" id="release" 
+        style="position: relative; grid-column: span 2; background-color: black; color: white; padding: 10px; border: double; border-color: white; margin-bottom: 0; background-image: url(/music/{{ release.id }}/cover-blur.jpg)">
         </span>
-        <span id="cover"><img src="/music/{{ release.id }}/cover.jpg" style="z-index: 2; float: left; margin-right: 5%; background-size:contain; margin-bottom: 2em; max-block-size:100%; max-width:40%; max-height:fit-content; height:90%; margin-right:5%; margin-bottom:0%; object-fit:contain; border: double; border-color: gray;"></img></span>
-        <h3><a href="/music/{{ releaseid }}/page.html" class="release-link">{{ release.title }}</a> <font color="gray">({{ release.year }})</font></h3>
-        &bull; {{ release.type }} by {{ release.artist }}<br>
-        &bull; {{ release.genres }}<br>
-        &bull; {{ release.length }}</h5> 
-   </div>
-      {% endunless %}
-   {% unless forloop.last %}<br>{% endunless %}
-   {%- endfor -%}
+            <span id="cover"><img src="/music/{{ release.id }}//cover.jpg" style="float:center; margin-right: 5%; background-size:contain; max-block-size:100%; object-fit:contain; border: double; border-color: gray;"></img></span>
+            <font size="2"><u>{{ release.artist }}</u></font><br>
+            <font size="3"><a href="/music/{{ release.id }}/page.html" class="release-link">{{ release.title }}</a> <font color="gray">({{ release.year }})</font></font><br>
+
+            <div id="release-misc"><font size="2" color="#AAAAAA">{{ release.genres }} &bull; {{ release.length }} &bull; {{ release.date }}</font></div>
+    </div>
+    {% endunless %}
+    {%- endfor -%}
 </div>
 <br/>
